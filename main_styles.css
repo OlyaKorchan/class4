@@ -1,6 +1,6 @@
 /* main page*/
 
-html,body,p,h1 {
+html,body,p,h1, ul {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -11,24 +11,29 @@ html,body,p,h1 {
     min-height: 100%;
 }
 .header {
-    background-color: pink;
-    height: 150px;
+    background-color: #0abab5;
+    text-align: center;
+    color:white;
+    height: 100px;
     width: 100%;
     top:0;
     left:0;
-    position: absolute;
+    position: fixed;
 }
 
 .navigation {
-    background-color: green;
     float:left;
     width: 200px;
     height: 100%;
+    border-right: double;
+    
 
 }
 .article {
     background-color: yellow;
     height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 
@@ -36,15 +41,23 @@ html,body,p,h1 {
     width: 100%;
     position:fixed;
     background-color: orange;
-    top:150px;
-    bottom:150px;
+    top:100px;
+    bottom:50px;
 }
 .footer {
     background-color: pink;
-    position: absolute;
+    position: fixed;
     width: 100%;
-    height:150px;
+    height:50px;
     bottom: 0;
     left:0;
+}
+
+ul
+{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
